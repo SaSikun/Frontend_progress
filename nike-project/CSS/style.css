@@ -11,6 +11,7 @@
 }
 
 html{
+    /* width: 536px; */
     scroll-behavior: smooth !important;
 }
 
@@ -81,6 +82,7 @@ section .main .main_content{
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
 
 section .main .main_content .main_text h1{
@@ -113,7 +115,7 @@ section .main .main_content .main_text p{
     left:5%;
 }
 
-section .main .main_content .main_imgage img{
+section .main .main_content .main_image img{
     width: min(50vw,700px);
     height: auto;
     position:relative;
@@ -145,6 +147,7 @@ section .main .social_icon i:hover{
 section .main .button{
     cursor: pointer;
     position: absolute;
+    bottom:18%;
     left: 6%;
     padding:10px 20px;
     border-radius: 30px;
@@ -165,4 +168,33 @@ section .main .button:hover i{
     transform: translateX(100%);
 }
 
+/* Products */
 
+.products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+
+}
+.products h1{
+    margin: 35px 0;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background:var(--STYLE-GRADIENT);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.products .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px 0;
+}
+.products .box .card .image img{
+    width: 150px;
+}
